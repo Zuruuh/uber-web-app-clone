@@ -1,7 +1,7 @@
-import firebaseClient from '../../auth/firebase';
+import firebaseClient from './firebase';
 import { GoogleAuthProvider, getAuth, signInWithPopup } from 'firebase/auth';
 
-export const useGoogleAuth = async () => {
+export const googleAuth = async () => {
   firebaseClient();
   const provider = new GoogleAuthProvider();
   const auth = getAuth();
@@ -9,7 +9,7 @@ export const useGoogleAuth = async () => {
 
   await signInWithPopup(auth, provider).catch(
     (error) =>
-      !error.message.includes('auth/popup-closed-by-user') ??
+      !error.message.includes('auth/popup-closed-by-user') &&
       console.error(error),
   );
 };

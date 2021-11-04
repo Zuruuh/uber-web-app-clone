@@ -1,9 +1,9 @@
-import firebaseClient from '../../auth/firebase';
+import firebaseClient from './firebase';
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 import type { UserCredential } from 'firebase/auth';
-import type { AuthError, AuthInterface, AuthResponse } from '../../types';
+import type { AuthError, AuthInterface, AuthResponse } from '../types';
 
-export const useLogin = async ({
+export const authLogin = async ({
   email,
   password,
 }: AuthInterface): Promise<AuthResponse> => {

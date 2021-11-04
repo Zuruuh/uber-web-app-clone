@@ -1,9 +1,9 @@
-import firebaseClient from '../../auth/firebase';
+import firebaseClient from './firebase';
 import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
 import type { UserCredential } from 'firebase/auth';
-import type { AuthResponse, RegisterInterface, AuthError } from '../../types';
+import type { AuthResponse, RegisterInterface, AuthError } from '../types';
 
-export const useRegister = async ({
+export const authRegister = async ({
   email,
   password,
   repeatPassword,
