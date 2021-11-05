@@ -18,6 +18,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   spaced?: boolean;
   detachedIcon?: ButtonIconPosition;
   background?: string;
+  classes?: string;
   icon?: IconProp;
 }
 
@@ -34,6 +35,7 @@ const Button: React.FC<ButtonProps> = ({
   background,
   detachedIcon,
   spaced,
+  classes,
   ...props
 }) => {
   const type = bold ? 'text-black bg-white' : 'text-white bg-black';
@@ -67,7 +69,7 @@ const Button: React.FC<ButtonProps> = ({
         disabled={isLoading}
         style={{ background }}
         {...props}
-        className={`px-2 py-1 flex items-center relative ${width} ${size} ${borderRadius} ${type} ${hovered} ${transition} ${itemsPosition}`}
+        className={`px-2 py-1 flex items-center relative ${width} ${size} ${borderRadius} ${type} ${hovered} ${transition} ${itemsPosition} ${classes}`}
       >
         {isLoading ? (
           <FontAwesomeIcon icon={faSpinner} spin />
