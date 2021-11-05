@@ -1,6 +1,6 @@
 import { AuthProvider } from '../hooks/auth/useAuth';
 
-import '../styles/fonts/UberMove.css';
+import '../styles/fonts/fonts.css';
 import 'tailwindcss/tailwind.css';
 
 import '@fortawesome/fontawesome-svg-core/styles.css';
