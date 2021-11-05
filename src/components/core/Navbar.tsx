@@ -23,12 +23,17 @@ const NavBar: React.FC<NavBarProps> = ({}) => {
           <>
             <div>
               <NextLink href="/register">
-                <Button text="Sign up" rounded bold />
+                <Button
+                  text="Sign up"
+                  rounded
+                  classes="font-uber-text-medium"
+                  bold
+                />
               </NextLink>
             </div>
             <div>
               <NextLink href="/login">
-                <Button text="Log in" rounded />
+                <Button text="Log in" rounded classes="font-uber-text-medium" />
               </NextLink>
             </div>
           </>
