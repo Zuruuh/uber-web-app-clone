@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'Uber Move Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Uber Move Medium'), url('UberMoveMedium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Uber Move Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Uber Move Bold'), url('UberMoveBold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Uber Move Text Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Uber Move Text Regular'),
+    url('UberMoveTextRegular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Uber Move Text Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Uber Move Text Light'),
+    url('UberMoveTextLight.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Uber Move Text Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Uber Move Text Medium'),
+    url('UberMoveTextMedium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Uber Move Text Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Uber Move Text Bold'), url('UberMoveTextBold.woff') format('woff');
+}

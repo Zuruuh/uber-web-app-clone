@@ -10,6 +10,9 @@ module.exports = {
       fontFamily: {
         'uber-medium': ['Uber Move Medium', 'sans-serif'],
         'uber-bold': ['Uber Move Bold', 'sans-serif'],
+        'uber-text': ['Uber Move Text Regular', 'sans-serif'],
+        'uber-text-medium': ['Uber Move Text Regular', 'sans-serif'],
+        'uber-text-bold': ['Uber Move Text Bold', 'sans-serif'],
       },
     },
   },
