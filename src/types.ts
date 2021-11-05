@@ -18,3 +18,9 @@ export interface AuthResponse {
   error?: AuthError;
   credentials?: UserCredential;
 }
+
+export interface Car {
+  imgUrl: string;
+  service: string;
+  multiplier: number;
+}
